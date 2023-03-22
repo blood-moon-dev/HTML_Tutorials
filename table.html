@@ -2,7 +2,7 @@
 <html>
   <head>
     <style>
-      table ,th,td{border-collapse: collapse;}
+      table ,th,td,tr{border-collapse: collapse;}
     </style>
     <link rel="icon" type="image" href="icon.png">
   </head>
@@ -48,9 +48,11 @@
    </tr>
   </table>
   <style>
-    table,th,tr{border:2px solid red;
+    table,th,tr,td{border:2px solid red;
    text-align: center;}
-    tr:nth-child(even){background-color: lawngreen;}
+    tr:nth-child(even){background-color: lawngreen;
+    padding-left: 45px;
+  padding-right: 45px;}
     
 
   </style>
@@ -97,5 +99,47 @@
       <td>d</td>
       <td>z</td>
     </tr>
+  </table>
+  
+  <!--vertical table-->
+  <style>
+  table tr,td,th{padding: 30px;}
+  </style>
+  <table>
+    <tr>
+      <th>monday</th>
+      <td>sci</td>
+      <td>math</td>
+      <td>eng</td>
+      <td>urdu</td>
+    </tr>
+    <tr>
+      <th>tuesday</th>
+      <td>urdu</td>
+      <td>eng</td>
+      <td>sci</td>
+      <td>scio</td>
+    </tr>
+    <tr>
+      <th>wednesday</th>
+      <td>eng</td>
+      <td>urdu</td>
+      <td>sci</td>
+    </tr>
+    <tr>
+      <th>thursday</th>
+      <td>eng</td>
+      <td>urdu</td>
+      <td>sci</td>
+      <td>math</td>
+    </tr>
+    <tr>
+      <th>wednesday</th>
+      <td>urdu</td>
+      <td>sci</td>
+      <td>eng</td>
+      <td>math</td>
+    </tr>
+    
   </table>
 </html>
