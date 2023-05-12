@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{background: url(./images/icon_imagee.jpg) no-repeat center fixed;}
+        #corner{background-color: gray;
+        border-radius: 60px;width: 90px;height: 90px;padding: 60px;}
+        #corner1{background: brown;border-radius: 24px 150px 33px 150px;width: 29px;height: 29px;padding: 90px;}
+        #corner2{background: yellow;border-radius: 34px/50px;width: 30px;height: 30px;padding: 90px;}
+        #bordering{border:10px solid transparent;
+        padding: 50px;
+    border-image: url(./images/icon_picture.png) 450 round;}
+    #border2{border: 19px solid transparent;
+    padding: 23px;
+border-image: url(./images/icon_imagee.jpg) 90 round;}
+    #border3{border: 14px solid transparent;
+    padding: 40px;
+border-image: url(./images/icon_imagee.jpg) 100 stretch;}
+#background{background-image: url(./images/icon_picture.png);background-repeat: no-repeat;background-position: top left;padding: 20px;}
+#example1{border: 1px solid black;padding: 70px;background: url(./images/icon_imagee.jpg) 45px 10px repeat;}
+/*background size fit*/
+#example2{border: 1px solid black;padding: 20px;height: 120px;width: 150;background: url(./images/icon_picture.png) repeat 20px  ;background-size: cover;}
+#doe{background-color: rgba(0, 255, 221, 0.651) ;border: 1px solid black;padding: 20px;}
+    </style>
+</head>
+<body>
+    <!--rounded colors-->
+    <P id="corner"></P>
+    <P id="corner1"></P>
+    <p>there is a elipetical border in which we use border radius like: 25px/50px in this first one is horizontal value and the second one is vertics vslue</p>
+    <P id="corner2"></P>
+    <!--border image-->
+    <P id="bordering">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat.</P>
+    <p id="border2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis.</p>
+    <p id="border3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi!</p>
+    <!--backgrounds-->
+ <P id="background">hi</P>
+   <P id="example1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio.</P> 
+   <p id="example2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem eveniet tenetur cumque dolore consectetur voluptates qui in dicta!</p>
+   <!--colors-->
+   <p id="doe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo?</p>
+</body>
+</html>
