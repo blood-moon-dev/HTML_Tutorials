@@ -7,18 +7,22 @@
           content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>New Tab</title>
+    <linK rel="icon" href="../images/icons8-chrome-50.png">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&family=Poppins:wght@300&display=swap');
+
         html {
             background: url(../images/image_assignment.jpg) no-repeat center fixed;
             background-size: cover;
             width: auto;
             height: auto;
+
         }
         * {
             font-family: 'Poppins', sans-serif;
         }
+
         #decor {
             color: white;
             text-decoration: none;
@@ -34,7 +38,7 @@
         #circle {
             color: white;
             border-radius: 100%;
-            padding: 3px 11px 6px 11px;
+            padding: 3px 9px 5px 9px;
             background-color: rgb(120, 144, 156);
             text-decoration: none;
             font-size: 15px;
@@ -43,7 +47,8 @@
         #word {
             text-align: center;
             color: rgb(238, 238, 238);
-            font: weight 500px; ;
+            font: weight 500px;
+            ;
             font-size: 80px;
             margin: 90px 20px 30px;
         }
@@ -62,9 +67,26 @@
         }
 
         .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
             position: absolute;
             display: none;
             z-index: 1;
+            background-color: aliceblue;
+            width: 300px;
+            height: 400px;
+            padding: 12px 0px 20px 6px;
+            right: 0%;
+            border-radius: 2%;
+          overflow-y: scroll;
+          margin: 5px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
     </style>
 </head>
@@ -77,27 +99,61 @@
                id="decor">Gmail</a>
             <a href=""
                id="decor">Images</a>
+            <div class="dropdown">
+                <a href=""
+                   style="margin-left: 9px;margin-right: 16px;">
+                    <img src="../images/icons8-grid-30 (5).png"
+                         style="font-size: smaller;box-shadow: 2px 1px 7px rgba(27, 196, 140, 0.5) ; background:rgba(27, 196, 140, 0.5); width: 16px;vertical-align: bottom;">
+                </a>
+                <div class="dropdown-content">
+                    
+                    <div style="display: inline-block;">
+                     <a href=""><img src="../images/icons8-google-48.png" style="margin: 17px ;"></a>
+                    <a href=""><img src="../images/icons8-google-maps-48.png" style="margin: 17px;"></a>
+                    <a  href=""><img src="../images/icons8-gmail-48.png" style="margin: 17px;"></a>
+                     </div> 
+                     <div>
+                        <a href=""><img src="..//images/icons8-google-play-48.png" style="margin: 17px;"></a>
+                        <a href=""> <img src="../images/icons8-google-drive-48.png" style="margin: 17px;"></a>
+                        <a href=""> <img src="../images/icons8-google-meet-48.png" style="margin: 17px;"></a>
+                     </div>
+                     <div>
+                        <a href=""><img src="../images/icons8-google-calendar-48.png" style="margin: 17px;"></a>
+                        <a href=""><img src="../images/icons8-play-games-48.png" style="margin: 17px;"></a>
+                        <a href=""> <img src="../images/icons8-youtube-48.png" style="margin: 17px;"></a>
+                     </div>
+                     <div>
+                        <a href=""> <img src="../images/icons8-google-earth-100.png" style="font-size: 20px;"></a>
+                        <a href=""><img src="../images/icons8-google-photos-48.png" style="margin: 17px;"></a>
+                        <a href=""><img src="../images/icons8-google-translate-48.png" style="margin: 17px;"></a>
+                     </div>
+                     <div>
+                        <a href=""><img src="../images/icons8-google-docs-48.png" style="margin: 17px;"></a>
+                        <a href=""><img src="../images/icons8-google-podcasts-48.png" style="margin:17px"></a>
+                        <a href=""><img src="../images/icons8-google-sheets-48.png" style="margin: 19px;"></a>
+                     </div>
+                </div>
+
+            </div>
+
             <a href=""
-               style="vertical-align: middle;margin-left: 9px;margin-right: 16px;"><img
-                     src="../images/icons8-grid-30 (3).png"
-                     style="font-size: smaller;"></a>
-            <a href=""
-               id="circle">a</a>
+               id="circle" style="z-index: 0;">a</a>
         </div>
     </div>
     <div>
-        <p id="word" style="font-family:josefin Sans">Google</p>
+        <p id="word"
+           style="font-family:josefin Sans">Google</p>
     </div>
     <div style="text-align: center;">
         <input type="text"
                name="Search"
                placeholder=" Search Google or type a URL"
                style="background-image: url(../images/icons8-search-48\ \(2\).png),url(../images/image_assignmenttt.jpg);
-               background-position: 3% ,98%;background-size: 17px,30px;background-repeat: no-repeat;background-color: white;outline: none;">
+               background-position:3% ,98%;background-size: 17px,30px;background-repeat: no-repeat;background-color: white;outline: none;">
     </div>
 
     <a href=""
-       style="float:right;transform: translate(0px,366px);margin-right: 10px;"><img
+       style="float:right;transform: translate(0px,400px);margin-right: 10px;"><img
              src="../images/icons8-pencil-24 (2).png"></a>
 
 </body>
