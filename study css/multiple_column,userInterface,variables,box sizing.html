@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {--red:hwb(7 3% 7%);}
+        .column{column-count: 5;column-rule: 2px solid red;
+        column-gap: 20px;}
+        .resize{border: 2px solid black;padding: 20px;width: 300px;overflow: auto;resize: both;}
+        .outline{border: 1px solid black; width: 100%;outline: 3px solid red;outline-offset: 15px;}
+        p{--red:#1616bb;}
+    </style>
+</head>
+
+<body>
+    <!--multiple columns-->
+    <div class="column">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum aliquam est illo perferendis
+        deleniti rerum minima quibusdam voluptate sit? Voluptatem adipisci aut iste doloremque ullam eligendi
+        dolorem asperiores iure? Voluptas animi in aliquam autem dicta consectetur, repudiandae odit quidem iste
+        consequatur! Odio tempore amet necessitatibus deleniti quos dolorem voluptate, ab harum iste! Ut officia
+        molestias esse quisquam dolore obcaecati perspiciatis vero amet minus, ipsum ipsa nobis quidem. Laudantium,
+        sapiente, recusandae quas pariatur dicta non quia omnis officia, fugit consequatur ducimus. Est molestias
+        totam fugit ipsa officiis distinctio et minus labore? Dignissimos, iusto amet hic animi ea facere
+        necessitatibus nam repudiandae laboriosam neque blanditiis aperiam? Porro alias praesentium nihil
+        saepe cumque ratione aliquam! Rerum voluptatem voluptatum maiores vero ipsa dolor ut iusto omnis
+        quo asperiores, culpa consectetur exercitationem expedita iure dicta veritatis repellendus ratione?
+        Suscipit, modi! Deserunt, temporibus quidem quisquam labore ipsam, architecto voluptatem asperiores
+        facere quae voluptates doloremque vitae voluptatibus repellendus quod magni inventore voluptate fugiat quasi
+        obcaecati ut veniam aut assumenda amet corrupti! Suscipit, minima ex, reiciendis veniam facere amet accusamus
+        corporis laborum laudantium vitae, maxime quia vero perspiciatis eos architecto. Maxime cumque, rem debitis nisi
+        ad, repellat autem quos consectetur repudiandae dolor rerum ipsa. Quis, voluptatibus commodi. Animi esse aliquid
+        voluptatibus natus vero explicabo tempora incidunt quisquam officia reprehenderit? Atque, dicta. Quas numquam
+        expedita
+        incidunt reiciendis recusandae deserunt quae sit pariatur, fuga illo voluptates nulla labore iure suscipit
+        itaque voluptatum iste blanditiis
+        consequuntur est ipsam quos unde laboriosam a aliquid? Rem a optio distinctio et. Ea quibusdam reprehenderit
+        ipsam, autem sed illo
+        voluptas omnis officiis. Quaerat non omnis, nobis consectetur ex esse molestiae cumque quasi nesciunt dicta
+        soluta quos error fuga
+        pariatur aliquid sed nostrum ullam ipsam fugiat quod corrupti! Sit voluptates possimus nobis commodi, sunt nulla
+        dolor nostrum amet
+        deleniti quod! Dolorum, optio inventore, beatae vero veniam cumque voluptas laborum ut natus quidem aut nobis
+        magnam accusantium dolores ipsa, pariatur dolor laudantium cum non quae atque. Ipsam commodi consequatur
+        excepturi! Ullam repellendus eius in eum amet doloribus architecto culpa rerum, corrupti nostrum. Quis cumque
+        illo nemo harum, hic cum. Quis, itaque distinctio. Odio, inventore non sint odit alias eaque illo, nostrum a
+        minima harum dolore iure neque nisi, sequi molestias officia laboriosam deleniti! Minima tenetur laudantium odio
+        qui maiores sunt in nam voluptatibus optio eum et, quasi reiciendis facilis eaque dignissimos hic culpa tempore
+        doloremque! Odio recusandae itaque porro eos quia voluptates consequatur, temporibus eveniet laudantium.
+    </div>
+    <!--user interface-->
+    <p>in this user interface we resize the wight and hieth of a pararph by cursor movement </p>
+    <div class="resize">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum modi nisi quod repellat animi assumenda nostrum, quasi dolorum sed.
+    </div>
+    <h1>
+        to remove the resize able cability from textarea we use resize none
+    </h1>
+    <textarea style="padding: 20px;width: 200px;resize: none;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore maxime nulla ut repudiandae recusandae fugit!
+    </textarea>
+<h3>
+    outline offset is a method to use to give some space between border and outline
+</h3>
+<div class="outline">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae inventore enim nihil, hic magni dolorum tempora illum est id.
+</div>
+<!--variables -->
+<p> variables</p>
+<pre style="color: var(--red);"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat.</pre>
+<h3>
+    override the variables is a method to override the global variable from local 
+</h3>
+<p style="
+color: var(--red);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi?</p>
+<!--Box sizing -->
+<p> box sizing method is used to give width hiegth padding of the border box</p>
+<p style="border: 1px solid red; box-sizing: border-box;width: 300px;padding: 20px;height: 100px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem?</p>
+</body>
+</html>
