@@ -1,7 +1,0 @@
-.container{background-color: blueviolet;width: 900px;height: 400px;display: grid;
-grid-template-rows: 140px,140px,150px;grid-template-columns: 150px,144px,157px;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(3,1fr);row-gap: 12px;column-gap: 20px;}
-.item{background-color: aquamarine; }
-.item3{background-color: brown; justify-content: end;}
-.item2{grid-column-start: 1;
-grid-column-end: 2;justify-items: center;place-items: center;}
-.assign{justify-content: end;border: 2px solid black;width: 200px;height: 200px;background-color: aqua;}
